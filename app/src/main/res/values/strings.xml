@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quick Math</string>
+    
+    <!-- Onboarding -->
+    <string name="choose_language">Choose Language</string>
+    <string name="pick_language">Pick your preferred language to start training.</string>
+    <string name="privacy_matters">Privacy Matters</string>
+    <string name="privacy_desc">Quick Math works entirely on your device. We never collect or share your data.</string>
+    <string name="accept_continue">Accept &amp; Continue</string>
+    
+    <!-- Home -->
+    <string name="double_tap_start">Double tap the badge to start session</string>
+    <string name="double_tap_stop">Double tap the badge to stop session</string>
+    <string name="start_session">Start Session</string>
+    <string name="stop_session">Stop Session</string>
+    <string name="strict_mode">Strict Mode</string>
+    <string name="premium">Premium</string>
+    
+    <!-- Permissions -->
+    <string name="overlay_permission_title">Overlay Permission Required</string>
+    <string name="overlay_permission_desc">To enable Strict Mode, Quick Math needs permission to display over other apps. This ensures you complete your training.</string>
+    <string name="background_permission_title">Background Activity</string>
+    <string name="background_permission_desc">To keep the session running smoothly, please allow Quick Math to run in the background without battery restrictions.</string>
+    <string name="grant">Grant Permission</string>
+    
+    <!-- Math Card -->
+    <string name="think_quick">Think quick!</string>
+    
+</resources>

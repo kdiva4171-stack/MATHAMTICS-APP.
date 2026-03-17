@@ -1,0 +1,5 @@
+{
+  "name": "Quick Math",
+  "description": "A mental math training app that overlays problems during daily phone usage to keep your mind sharp.",
+  "requestFramePermissions": []
+}
