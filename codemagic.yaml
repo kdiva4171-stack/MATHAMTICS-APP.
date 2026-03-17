@@ -1,0 +1,37 @@
+workflows:
+  android-debug-workflow:
+    name: Android Debug APK Build
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        PACKAGE_NAME: "com.quickmath.app"
+      node: latest
+      java: 17
+      android_sdk: 34
+    triggering:
+      events:
+        - push
+        - pull_request
+      branches:
+        - main
+        - master
+    scripts:
+      - name: Download Gradle Wrapper JAR
+        script: |
+          mkdir -p gradle/wrapper
+          curl -L https://github.com/gradle/gradle/raw/v8.4.0/gradle/wrapper/gradle-wrapper.jar -o gradle/wrapper/gradle-wrapper.jar
+      - name: Set execute permission for gradlew
+        script: chmod +x gradlew
+      - name: Build Android debug APK
+        script: |
+          ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
+    publishing:
+      email:
+        recipients:
+          - diwaaakarrr@gmail.com
+        notified:
+          on_success: true
+          on_failure: true
